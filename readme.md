@@ -23,7 +23,7 @@ npm install && bower install
 Make sure it has the same name you entered when you generated this project: test1
 
 Edit the project files to add your content.
-
+lkasjlksjhkjhf
 Deploy to GitHub Pages:
 ```
 grunt deploy
