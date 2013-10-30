@@ -2,7 +2,7 @@ var d3 = require('./d3-shim');
 var $ = require('jquery-browserify');
 var chart = require('./d3-chart-shim.js');
 var barchart = require('./barchart.js');
-//
+(function () { delete window.d3; })(); // unset global
 //
 
 // a change so should rebuild!
@@ -12,7 +12,7 @@ console.log('nanother n');
 
 
 $(function() {
-	
+	delete window.d3;
 	console.log('form within doc ready');
 	var barChart = d3.select("#bar-chart").append('svg').attr('height', 250).attr('width', 600).chart('BarChart', {
 		bar_color: "grey"
@@ -58,5 +58,5 @@ $(function() {
 
 });
 
-//
+// //
 // a change
