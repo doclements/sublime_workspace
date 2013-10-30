@@ -12,6 +12,7 @@ Add and commit the files:
 git add .
 git commit -m 'initial commit'
 ```
+sssss
 
 run npm + bower install
 ```
