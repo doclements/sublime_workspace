@@ -2,6 +2,11 @@ var d3 = require('./d3-shim');
 var $ = require('jquery-browserify');
 var chart = require('./d3-chart-shim.js');
 var barchart = require('./barchart.js');
+
+var _ = require('underscore');
+
+
+
 (function () { delete window.d3; })(); // unset global
 //(function () { delete window.$; })(); // unset global
 //
@@ -13,6 +18,15 @@ console.log('piffpaff');
 //////
 var barChart;
 $(function() {
+
+
+	var boo = {
+		"key" : "valuye",
+		"hmmm" : "blah"
+	};
+
+	console.log(_.keys(boo));
+
 	//delete window.d3;
 	console.log('form within doc ready');
 	console.log($.fn.jquery);
