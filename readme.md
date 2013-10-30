@@ -6,7 +6,7 @@ Initialize the git repository for the project:
 ```
 git init
 ```
-
+blah
 Add and commit the files:
 ```
 git add .
