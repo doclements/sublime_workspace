@@ -3,18 +3,20 @@ var $ = require('jquery-browserify');
 var chart = require('./d3-chart-shim.js');
 var barchart = require('./barchart.js');
 (function () { delete window.d3; })(); // unset global
+//(function () { delete window.$; })(); // unset global
 //
-
+console.log(d3);
 // a change so should rebuild!
-console.log($('<div>'));
+console.log($);
 console.log(d3.select('body'));
-console.log('nanother n');
-
-
+console.log('piffpaff');
+//////
+var barChart;
 $(function() {
-	delete window.d3;
+	//delete window.d3;
 	console.log('form within doc ready');
-	var barChart = d3.select("#bar-chart").append('svg').attr('height', 250).attr('width', 600).chart('BarChart', {
+	console.log($.fn.jquery);
+	barChart = d3.select("#bar-chart").append('svg').attr('height', 250).attr('width', 600).chart('BarChart', {
 		bar_color: "grey"
 	});
 	barChart.draw([{
@@ -22,7 +24,7 @@ $(function() {
 		value: 29
 	}, {
 		name: 'FEB',
-		value: 32
+		value: 3
 	}, {
 		name: 'MAR',
 		value: 48
@@ -58,5 +60,4 @@ $(function() {
 
 });
 
-// //
-// a change
+

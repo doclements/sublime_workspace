@@ -13,6 +13,7 @@
  */
 //var d3 = require('./d3-shim.js');
 //d3.chart = require('./d3-chart-shim.js');
+var d3 = require('./d3-shim');
 
 d3.chart('BarChart', {
 	initialize: function(config) {
