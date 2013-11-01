@@ -28,4 +28,5 @@ Edit the project files to add your content.
 Deploy to GitHub Pages:
 ```
 grunt deploy
+home test
 ```
