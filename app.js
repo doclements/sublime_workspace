@@ -1,9 +1,13 @@
 var d3 = require('./d3-shim');
 var $ = require('jquery-browserify');
-var chart = require('./d3-chart-shim.js');
+//var chart = require('./d3-chart-shim.js');
 var barchart = require('./barchart.js');
 
 var _ = require('underscore');
+
+
+var req = require('request');
+
 
 
 
@@ -18,7 +22,7 @@ console.log('piffpaff');
 //////
 var barChart;
 $(function() {
-
+//
 
 	var boo = {
 		"key" : "valuye",
