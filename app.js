@@ -6,7 +6,7 @@ var barchart = require('./barchart.js');
 var _ = require('underscore');
 
 
-var req = require('request');
+
 
 
 
